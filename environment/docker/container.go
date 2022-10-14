@@ -244,15 +244,15 @@ func (e *Environment) Create() error {
 		// the server output. Ensure that we don't use too much space on the host machine
 		// since we only need it for the last few hundred lines of output and don't care
 		// about anything else in it.
-		LogConfig: container.LogConfig{
-			Type: local.Name,
-			Config: map[string]string{
-				"max-size": "5m",
-				"max-file": "1",
-				"compress": "false",
-				"mode":     "non-blocking",
-			},
-		},
+		// LogConfig: container.LogConfig{
+		// 	Type: local.Name,
+		// 	Config: map[string]string{
+		// 		"max-size": "5m",
+		// 		"max-file": "1",
+		// 		"compress": "false",
+		// 		"mode":     "non-blocking",
+		// 	},
+		// },
 
 		SecurityOpt:    []string{"no-new-privileges"},
 		ReadonlyRootfs: true,
