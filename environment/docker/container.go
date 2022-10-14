@@ -16,7 +16,6 @@ import (
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/mount"
 	"github.com/docker/docker/client"
-	"github.com/docker/docker/daemon/logger/local"
 
 	"github.com/pterodactyl/wings/config"
 	"github.com/pterodactyl/wings/environment"
